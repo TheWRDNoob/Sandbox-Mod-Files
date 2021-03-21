@@ -1,0 +1,291 @@
+<wargamepatch>
+	<!-- Replaces all accuracy values in the game below 95% to 4/5ths accuracy, rounded to nearest multiple of 5 -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="5acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.05</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.05</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="10acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.1</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.1</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="15acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.15</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.1</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="20acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.2</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="25acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.25</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.20</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="30acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.3</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.25</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="35acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.35</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.30</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="40acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.4</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.30</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="45acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.45</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.35</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="50acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.5</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.4</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="55acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.55</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.45</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="60acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.6</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.5</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="65acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.65</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.5</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="70acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.7</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.55</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="75acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.75</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.6</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="80acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.8</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.65</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="85acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.85</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.70</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="90acc">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbability">0.9</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbability">0.70</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="5accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.05</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.05</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="10accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.1</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.1</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="15accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.15</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.1</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="20accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.2</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.15</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="25accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.25</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.20</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="30accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.3</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.25</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="35accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.35</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.30</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="40accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.4</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.3</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="45accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.45</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.35</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="50accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.5</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.4</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="55accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.55</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.45</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="60accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.6</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.5</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="65accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.65</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.5</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="70accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.7</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.55</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="75accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.75</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.6</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="80accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.8</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.65</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="85accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.85</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.70</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareHitRollRule" name="90accStab">
+		<matchconditions>
+			<matchcondition type="property" property="HitProbabilityWhileMoving">0.9</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="HitProbabilityWhileMoving">0.70</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

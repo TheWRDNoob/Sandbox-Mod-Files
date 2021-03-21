@@ -1,0 +1,9 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<!-- Changes number of deck cards to 60 for all units. -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="unitAvail">
+		<changes>
+			<change operation="set" property="MaxPacks" type="UInt32">50</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

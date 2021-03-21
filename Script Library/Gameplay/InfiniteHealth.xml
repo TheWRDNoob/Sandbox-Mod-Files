@@ -1,0 +1,11 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<!-- This changes the "strength" of every unit to 10000. -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareDamageModuleDescriptor" name="InfiniteHealth">
+		<changes>
+			<change operation="set" property="MaxDamages" type="Float32">10000</change>
+			<change operation="set" property="MaxHPForHUD" type="UInt32">10</change>
+			<!-- This is the number of health bars when in-game. Original is 10. -->
+		</changes>
+	</ndfpatch>
+</wargamepatch>

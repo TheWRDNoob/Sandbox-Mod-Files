@@ -1,0 +1,12 @@
+<!-- THIS IS A COMMENT -->
+<!-- This .xml changes the default deck Activation Points. Not the bonuses a deck gets for being of a certain country, coalition, specialization, or era. -->
+<wargamepatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="activationPointsIncrease">
+      <matchconditions>
+         <matchcondition type="property" property="__order">first</matchcondition>
+      </matchconditions>
+		<changes>
+			<change operation="set" property="DefaultActivationPoints" type="Int32">900</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

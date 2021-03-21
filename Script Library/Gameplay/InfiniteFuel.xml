@@ -1,0 +1,11 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<!-- This makes all units that use fuel have infinite time to move, including planes. Infantry do not have fuel modules and are not affected. -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TFuelModuleDescriptor" name="infiniteFuel">
+		<changes>
+			<change operation="set" property="FuelCapacity">100</change>
+			<!--FuelCapacity is how many liters of fuel the unit has ingame, but has no real effect on how long it can move. I put it at 100 so it can be seen as a percentage.-->
+			<change operation="set" property="FuelMoveDuration" type="Int32">99999</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

@@ -1,0 +1,14 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<!-- Salves is a list of 29 Int32 values representing the number of salvos (not to be confused with the number of rounds.) For example, a machine gun might have 50 rounds per salvo, so the number of rounds according to the armory would be 45,000. Although there are 29 values, it is rare for more than 4 values to be used. For planes and other units that have missiles on the model's pylons, the missile will reappear after it had been fired. -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TWeaponManagerModuleDescriptor" name="InfiniteAmmo">
+		<changes>
+			<change operation="set" property="Salves" key="0" type="Int32">900</change>
+			<change operation="set" property="Salves" key="1" type="Int32">900</change>
+			<change operation="set" property="Salves" key="2" type="Int32">900</change>
+			<change operation="set" property="Salves" key="3" type="Int32">900</change>
+			<change operation="set" property="Salves" key="4" type="Int32">900</change>
+			<change operation="set" property="Salves" key="5" type="Int32">900</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

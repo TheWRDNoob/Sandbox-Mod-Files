@@ -1,0 +1,21 @@
+<!-- THIS IS A COMMENT -->
+<!-- This .xml increases default slot capacity of each category. Keys are the unit categories, and in order are: Log, Rec, Tank, Inf, Sup, Veh, Hel, Pla, Nav. -->
+<wargamepatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="deckSlotsToFifteen">
+      <matchconditions>
+         <matchcondition type="property" property="__order">first</matchcondition>
+      </matchconditions>
+      <changes>
+         <!-- Sets max size of each category to 9. The key is the unit category. 3=Logistics, 10=Recon, 9=Tank, 6=Infantry, 13=Support, 8=Vehicle, 11=Helicopters, 7=Planes, 12=Naval. 15 seems to be the max number of deck cards. -->
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="3">9</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="10">9</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="9">9</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="6">9</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="13">9</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="8">9</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="11">9</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="7">9</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="12">9</change>
+      </changes>
+   </ndfpatch>
+</wargamepatch>

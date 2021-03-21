@@ -1,0 +1,21 @@
+<!-- THIS IS A COMMENT -->
+<!-- This .xml changes the bonuses a deck gets for being of a certain country, coalition, specialization, or era. Not the default deck attributes. -->
+<wargamepatch>
+	<!-- All decks either have 0 (null), 5, or 10 activation points. I'm setting the ones with 5 and 10 to 0 since we can't set anything to null with this program. -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="noActivationPointBonus5">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">5</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">0</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckRulesModifier" name="noActivationPointBonus10">
+		<matchconditions>
+			<matchcondition type="property" property="ActivationPoints">10</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="ActivationPoints" type="Int32">0</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

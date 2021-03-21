@@ -1,0 +1,23 @@
+﻿<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<!-- This script changes the Nationalite value of all units and FOBs to 0. 0 is Blufor, 1 is Redfor. -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="TUniteAuSol Nationalite">
+		<matchconditions>
+			<matchcondition type="property" property="Nationalite">1</matchcondition>
+			<!-- Only applies changes to instances that have a Nationalite value of 1. -->
+		</matchconditions>
+		<changes>
+			<change operation="set" property="Nationalite" type="Int32">0</change>
+			<!-- And changes them to 0. -->
+		</changes>
+  </ndfpatch>
+  <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteDescriptor" name="TUnite Nationalite">
+  <!-- The same this is required in TUniteDescriptor, which is where the FOB's are. -->
+		<matchconditions>
+			<matchcondition type="property" property="Nationalite">1</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="Nationalite" type="Int32">0</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

@@ -1,0 +1,12 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<!-- This changes all the flags in the Armory and Deck Building menu to be smaller. These two values edit national flags, coalition flags, and the "ALL" text left of the flags. This feature was added in Sandbox 5.4.2 to make room for all of the national flags in the Blufor row. -->
+	<ndfpatch ndf="pc\ndf\patchable\ui\components.ndfbin" table="TUIWargame2ShowRoomResources" name="Armory Flag Sizes">
+		<changes>
+			<change operation="set" property="ShowRoomFlagIconWidth" type="Float32">80</change>
+			<!-- Original was 121. -->
+			<change operation="set" property="ShowRoomFlagIconHeight" type="Float32">40</change>
+			<!-- Original was 36. -->
+		</changes>
+	</ndfpatch>
+</wargamepatch>

@@ -1,0 +1,9 @@
+While all of these scripts can work independently to edit one feature, only the process of moving every unit to Blufor requires multiple files because of the way I wrote the scripts. Though not all files are absolutely required, these are the ones I have used:
+
+AllCountriesNato
+AllCountryArmoriesNato
+CoalitionCompositions(NatoOnly)
+Nationalite
+OtanUnitIds
+FlagReferences
+FlagSize

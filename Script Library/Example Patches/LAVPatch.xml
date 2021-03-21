@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- This is a real patch contributed by Eugen Forums user Bollywood Baloney. It demonstrates most of the patcher's capabilities-->
+<wargamepatch>
+  <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="Add transporter module to LAV">
+    <matchconditions>
+      <!-- Identify the LAV-25 in TUniteAuSolDescriptor by its loc hash and nationality-->
+      <matchcondition type="property" property="NameInMenuToken">C6002E1600000000</matchcondition>
+      <matchcondition type="property" property="MotherCountry">US</matchcondition>
+    </matchconditions>
+    <changes>
+      <!-- add a new module to the list, mapped to TableString:"Transporter" -->
+      <change operation="append" property="Modules" type="map">
+        <map>
+          <key type="TableString">Transporter</key>
+          <value type="ObjectReference">
+            <!-- Now we need to borrow a TModuleSelector from another transport unit that points to a TransporterController-->
+            <reference table="TModuleSelector">
+              <matchconditions>
+                <matchcondition type="references" table="TTransporterModuleDescriptor">
+                  <!-- Condition one is that the TModuleSelector points to a TTransporterModuleSelector -->
+                  <matchconditions>
+                    <matchcondition type="property" property="ControllerName">TransporterController</matchcondition>
+                  </matchconditions>
+                </matchcondition>
+                <matchcondition type="referencedby" table="TUniteAuSolDescriptor">
+                  <!-- Condition two is that the TModuleSelector is itself referenced by another transport vehicle-->
+                  <matchconditions>
+                    <!-- I chose the LVTP-7 in this case -->
+                    <matchcondition type="property" property="NameInMenuToken">88E6811600000000</matchcondition>
+                    <matchcondition type="property" property="MotherCountry">US</matchcondition>
+                  </matchconditions>`
+                </matchcondition>
+              </matchconditions>
+            </reference>
+          </value>
+        </map>
+      </change>
+    </changes>
+  </ndfpatch>
+  <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="Change LAV price and avail">
+    <matchconditions>
+      <matchcondition type="property" property="NameInMenuToken">C6002E1600000000</matchcondition>
+      <matchcondition type="property" property="MotherCountry">US</matchcondition>
+    </matchconditions>
+    <changes>
+      <!-- pretty standard stuff here-->
+      <change property="MaxDeployableAmount" operation="clear" />
+      <change property="MaxDeployableAmount" type="UInt32" operation="append">16</change>
+      <change property="MaxDeployableAmount" type="UInt32" operation="append">14</change>
+      <change property="MaxDeployableAmount" type="UInt32" operation="append">10</change>
+      <change property="MaxDeployableAmount" type="UInt32" operation="append">6</change>
+      <change property="MaxDeployableAmount" type="UInt32" operation="append">4</change>
+      <change property="ProductionPrice" key="0" type="Int32" operation="set">20</change>
+    </changes>
+  </ndfpatch>
+  <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteDescriptor" name="Add TransporterCompany">
+    <!-- Now we add a TransporterCompany to the LAV's TUniteDescriptor. Failing to do so will result in a CTD when the LAV is deployed -->
+    <matchconditions>
+      <!-- TUniteDescriptor doesn't use loc hashes or nationality so we'll make do with ClassNameForDebug to identify the correct one -->
+      <matchcondition type="property" property="ClassNameForDebug">Company_LAV_25</matchcondition>
+    </matchconditions>
+    <changes>
+      <!-- Once again we are adding a module to a list -->
+      <change operation="append" property="Modules" type="map">
+        <map>
+          <key type="TableString">TransporterCompany</key>
+          <value type="ObjectReference">
+            <reference table="TModuleSelector">
+              <!-- As with the Transporter module, we're borrowing it from a LVTP-7 -->
+              <matchconditions>
+                <matchcondition type="references" table="TTransporterCompanyModuleDescriptor">
+                  <matchconditions>
+                    <matchcondition type="property" property="ControllerName">TransporterCompanyController</matchcondition>
+                  </matchconditions>
+                </matchcondition>
+                <matchcondition type="referencedby" table="TUniteDescriptor">
+                  <matchconditions>
+                    <matchcondition type="property" property="ClassNameForDebug">Company_LVTP_7</matchcondition>
+                  </matchconditions>
+                </matchcondition>
+              </matchconditions>
+            </reference>
+          </value>
+        </map>
+      </change>
+    </changes>
+  </ndfpatch>
+  <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteDescriptor" name="Change ModernWarfareOrderableController">
+    <!-- Now we need to update the LAV's Orderable module so any LAVs we deploy are capable of receiving "load" and "unload" orders -->
+    <matchconditions>
+      <!-- Once again we identify the TUniteDescriptor of the LAV -->
+      <matchcondition type="property" property="ClassNameForDebug">Company_LAV_25</matchcondition>
+    </matchconditions>
+    <changes>
+      <!-- No need to add a module this time, we're replacing one -->
+      <change operation="set" property="Modules" key="ModernWarfareOrderable" type="ObjectReference">
+        <reference table="TModuleSelector">
+          <!-- Once again we are borrowing a TModuleSelector from the LVTP-7 -->
+          <matchconditions>
+            <matchcondition type="references" table="TModernWarfareOrderableModuleDescriptor">
+              <matchconditions>
+                <matchcondition type="property" property="ControllerName">ModernWarfareOrderableController</matchcondition>
+              </matchconditions>
+            </matchcondition>
+            <matchcondition type="referencedby" table="TUniteDescriptor">
+              <matchconditions>
+                <matchcondition type="property" property="ClassNameForDebug">Company_LVTP_7</matchcondition>
+              </matchconditions>
+            </matchcondition>
+          </matchconditions>
+        </reference>
+      </change>
+    </changes>
+  </ndfpatch>
+  <!-- The two above patches could really have been just one but I chose to do them separately for the sake of clarity -->
+  <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TWargameLabelModuleDescriptor" name="Change label">
+    <!-- We're almost done, this is a cosmetic step. We'll change the LAV's icon to that of an APC, its hint to that of an IFV, and set its IsTransporter flag to "true"-->
+    <matchconditions>
+      <!-- We are working on a TWargameLabelModuleDescriptor instance this time. Fortunately those can be identified by loc hash, so we'll do just that-->
+      <matchcondition type="property" property="CompanyName">C6002E1600000000</matchcondition>
+    </matchconditions>
+    <changes>
+      <!-- We'll change the RTSTexture and NATOTexture modules to ones that represent an APC. To identify ones that do, we set our matchconditions to find modules that reference those specific textures in the game files -->
+      <change operation="set" property="RTSTexture">
+        <reference table="TUIResourceTexture">
+          <matchconditions>
+            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/UseInGame/LabelIcons/RTS/NATO_Transport_APC.png</matchcondition>
+          </matchconditions>
+        </reference>
+      </change>
+      <change operation="set" property="NATOTexture">
+        <reference table="TUIResourceTexture">
+          <matchconditions>
+            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/UseInGame/LabelIcons/NATO/NATO_Transport_APC.png</matchcondition>
+          </matchconditions>
+        </reference>
+      </change>
+      <!-- the rest is easy, we are changing loc hashes, booleans and TableStrings to whatever we desire -->
+      <change operation="set" property="NATOTextureName" type="TableString">NATO_Transport_APC</change>
+      <change operation="set" property="IsTransporter" type="Boolean">True</change>
+      <change operation="set" property="HintToken" type="LocalisationHash">2034010000000000</change>
+    </changes>
+  </ndfpatch>
+  <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TTransportableModuleDescriptor" name="Add LAV to Marines">
+    <!-- Home stretch. All we need to do is add the LAV to a squad's transport list so it can be accessed in the deck builder. We'll use the Marines here -->
+    <!-- Note that we are not editing the Marines' TUniteAuSolDescriptor directly, but rather the TTransportableModuleDescriptor that they use -->
+    <matchconditions>
+      <matchcondition type="referencedby" table="TUniteAuSolDescriptor">
+        <matchconditions>
+          <!-- We find the TTransportableModuleDescriptor. Note that because this particular Descriptor instance is accessed directly (and not via a TModuleSelector), we simply need to specify that we're looking for one referenced by the Marines' TUniteAuSolDescriptor-->
+          <matchcondition type="property" property="NameInMenuToken">B83ABBB779751F00</matchcondition>
+          <matchcondition type="property" property="MotherCountry">US</matchcondition>
+        </matchconditions>
+      </matchcondition>
+    </matchconditions>
+    <changes>
+      <!-- I chose to delete the Marines' transport list entirely so we can rebuild it in the desired order. There's no real need to do this and I do it because I am a sperglord and want the LAV to appear before the LVTP in their transport list-->
+      <!-- Note, however, that this creates a potential incompatibility; If we decided to give the Marines another transport in the future, wrote a patch for it and applied it this way, that patch would overwrite this one and the LAV would disappear from the transport list. This isn't a party-crasher, but simply something to be aware of if you plan to write lots of patches -->
+      <change property="TransportListAvailableForSpawn" operation="clear" />
+      <!-- Now we need to re-add the vehicles. We'll identify them by their NameInMenuTokens and MotherCountry, just as we would if we were trying to edit them-->
+      <change operation="append" property="TransportListAvailableForSpawn" type="ObjectReference">
+        <reference table="TUniteAuSolDescriptor">
+          <matchconditions>
+            <!-- LAV -->
+            <matchcondition type="property" property="NameInMenuToken">C6002E1600000000</matchcondition>
+            <matchcondition type="property" property="MotherCountry">US</matchcondition>
+          </matchconditions>
+        </reference>
+      </change>
+      <change operation="append" property="TransportListAvailableForSpawn" type="ObjectReference">
+        <reference table="TUniteAuSolDescriptor">
+          <matchconditions>
+            <!-- LVTP -->
+            <matchcondition type="property" property="NameInMenuToken">88E6811600000000</matchcondition>
+            <matchcondition type="property" property="MotherCountry">US</matchcondition>
+          </matchconditions>
+        </reference>
+      </change>
+      <change operation="append" property="TransportListAvailableForSpawn" type="ObjectReference">
+        <reference table="TUniteAuSolDescriptor">
+          <matchconditions>
+            <!-- Twin Huey -->
+            <matchcondition type="property" property="NameInMenuToken">BA34BBBC8709D207</matchcondition>
+            <matchcondition type="property" property="MotherCountry">US</matchcondition>
+          </matchconditions>
+        </reference>
+      </change>
+      <change operation="append" property="TransportListAvailableForSpawn" type="ObjectReference">
+        <reference table="TUniteAuSolDescriptor">
+          <matchconditions>
+            <!-- Sea Knight -->
+            <matchcondition type="property" property="NameInMenuToken">1F4BDFAD76145203</matchcondition>
+            <matchcondition type="property" property="MotherCountry">US</matchcondition>
+          </matchconditions>
+        </reference>
+      </change>
+    </changes>
+  </ndfpatch>
+  <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TTransportableModuleDescriptor" name="Add LAV to SMAW">
+    <!-- we also want SMAW to ride LAVs, so we'll do the same here for them. The difference is that SMAW ride Humvees but do not use the Sea Knight, so our list will look different -->
+    <matchconditions>
+      <matchcondition type="referencedby" table="TUniteAuSolDescriptor">
+        <matchconditions>
+          <matchcondition type="property" property="NameInMenuToken">B83ABBB779751F00</matchcondition>
+          <matchcondition type="property" property="MotherCountry">US</matchcondition>
+        </matchconditions>
+      </matchcondition>
+    </matchconditions>
+    <changes>
+      <change property="TransportListAvailableForSpawn" operation="clear" />
+      <change operation="append" property="TransportListAvailableForSpawn" type="ObjectReference">
+        <reference table="TUniteAuSolDescriptor">
+          <matchconditions>
+            <matchcondition type="property" property="NameInMenuToken">AABACBBA9428CA05</matchcondition>
+            <matchcondition type="property" property="MotherCountry">US</matchcondition>
+          </matchconditions>
+        </reference>
+      </change>
+      <change operation="append" property="TransportListAvailableForSpawn" type="ObjectReference">
+        <reference table="TUniteAuSolDescriptor">
+          <matchconditions>
+            <matchcondition type="property" property="NameInMenuToken">C6002E1600000000</matchcondition>
+            <matchcondition type="property" property="MotherCountry">US</matchcondition>
+          </matchconditions>
+        </reference>
+      </change>
+      <change operation="append" property="TransportListAvailableForSpawn" type="ObjectReference">
+        <reference table="TUniteAuSolDescriptor">
+          <matchconditions>
+            <matchcondition type="property" property="NameInMenuToken">88E6811600000000</matchcondition>
+            <matchcondition type="property" property="MotherCountry">US</matchcondition>
+          </matchconditions>
+        </reference>
+      </change>
+      <change operation="append" property="TransportListAvailableForSpawn" type="ObjectReference">
+        <reference table="TUniteAuSolDescriptor">
+          <matchconditions>
+            <matchcondition type="property" property="NameInMenuToken">BA34BBBC8709D207</matchcondition>
+            <matchcondition type="property" property="MotherCountry">US</matchcondition>
+          </matchconditions>
+        </reference>
+      </change>
+    </changes>
+  </ndfpatch>
+</wargamepatch>

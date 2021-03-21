@@ -1,0 +1,52 @@
+<wargamepatch>
+	<!-- 8 cards of Polish KUBs that cost $5 -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="KUBs for all">
+		<matchconditions>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_2K12_Kub</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="MaxPacks" type="UInt32">8</change>
+			<change operation="set" property="ProductionPrice" key="0" type="Int32">5</change>
+		</changes>
+	</ndfpatch>
+	
+	<!-- All tanks are from 1940 -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="The Year Of The Tank">
+		<matchconditions>
+			<matchcondition type="property" property="Factory">9</matchcondition>
+		</matchconditions>
+		<changes>
+			 <!-- Some units don't have years. If the entry is currently "Unset", the tool doesn't know what type to change it to and it fails.
+				The forcetype attribute tells it to ignore the current type and use that one instead. You can get these values from the mod tool GUI -->
+			<change operation="set" property="ProductionYear" type="UInt32">1940</change>
+		</changes>
+	</ndfpatch>
+	
+	<!-- Assign death blast from supply units to Motorstrelki '90 -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor">
+		<matchconditions>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_90_Motorstrelki</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="DeathExplosionAmmo">
+				<reference table="TAmmunition">
+					<matchconditions>
+						<matchcondition type="property" property="DescriptorId">00000000-0000-0000-0600-000007080000</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+		</changes>
+	</ndfpatch>
+	
+	<!-- Create a new unit and assign it a name -->
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="New Unit" />
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor">
+		<matchconditions>
+			<matchcondition type="property" property="__createdby">new unit</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="NameInMenuToken" type="LocalisationHash">8E14D59D2C0F8600</change>
+			<change operation="set" property="AliasName" type="WideString">TestString</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

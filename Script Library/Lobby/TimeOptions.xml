@@ -1,0 +1,22 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\gdconstanteoriginal.ndfbin" table="TTunableConstante" name="timeOptions">
+		<matchconditions>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="TimeLimitTable" operation="clear" />
+			<!-- Here, I list all the choices for game times. I believe that the maximum number of choices is 10. Time is in minutes, so 120 = 2 hours. 0 = No Time Limit. These settings apply for every map and only require the host of the server to use. -->
+			<change property="TimeLimitTable" type="UInt32" operation="append">10</change>
+			<change property="TimeLimitTable" type="UInt32" operation="append">15</change>
+			<change property="TimeLimitTable" type="UInt32" operation="append">20</change>
+			<change property="TimeLimitTable" type="UInt32" operation="append">30</change>
+			<change property="TimeLimitTable" type="UInt32" operation="append">40</change>
+			<change property="TimeLimitTable" type="UInt32" operation="append">45</change>
+			<change property="TimeLimitTable" type="UInt32" operation="append">50</change>
+			<change property="TimeLimitTable" type="UInt32" operation="append">60</change>
+			<change property="TimeLimitTable" type="UInt32" operation="append">120</change>
+			<change property="TimeLimitTable" type="UInt32" operation="append">0</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

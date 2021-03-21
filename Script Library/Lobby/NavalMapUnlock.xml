@@ -1,0 +1,15 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<ndfpatch ndf="pc\ndf\patchable\misc\globals.ndfbin" table="TModernWarfareMultiMapInfo" name="navalUnlock">
+		<matchconditions>
+			<matchcondition type="property" property="IsPlayableOnlyWithNavalUnits">True</matchcondition>
+			<!-- All naval only maps. -->
+		</matchconditions>
+		<changes>
+			<change operation="set" property="IsPlayableWithNavalUnitsAndTerrestrialUnits" type="Boolean">True</change>
+			<!-- Now playable with land decks -->
+			<change operation="set" property="IsPlayableOnlyWithNavalUnits" type="Boolean">False</change>
+			<!-- Taking away Naval or else it will for decks to be naval? -->
+		</changes>
+	</ndfpatch>
+</wargamepatch>

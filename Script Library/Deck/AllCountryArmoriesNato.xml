@@ -1,0 +1,67 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<!-- This patch moves every nation and coalition to Blufor. TDeckAttributes changes what decks are availible to make, and the armory appearence is linked to that. For instance, if you remove line 15, the US units and decks are still in the game, it will just not be an option in the deck creation list, and US units will not show up in the armory. -->
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="Clear PACT Armory">
+		<!-- This clears the Redfor country list. -->
+		<changes>
+			<change operation="select" property="MapFactionToCountry" key="1" />
+			<change operation="clear" type="TableString" />
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="All countries to NATO Armory">
+		<!-- This adds every country to the Blufor list -->
+		<changes>
+			<change operation="select" property="MapFactionToCountry" key="0" />
+			<change operation="clear" type="TableString" />
+			<change type="TableString" operation="append">US</change>
+			<change type="TableString" operation="append">UK</change>
+			<change type="TableString" operation="append">FR</change>
+			<change type="TableString" operation="append">RFA</change>
+			<change type="TableString" operation="append">CAN</change>
+			<change type="TableString" operation="append">DAN</change>
+			<change type="TableString" operation="append">SWE</change>
+			<change type="TableString" operation="append">NOR</change>
+			<change type="TableString" operation="append">ANZ</change>
+			<change type="TableString" operation="append">JAP</change>
+			<change type="TableString" operation="append">ROK</change>
+			<change type="TableString" operation="append">HOL</change>
+			<change type="TableString" operation="append">ISR</change>
+			<change type="TableString" operation="append">FIN</change>
+			<change type="TableString" operation="append">YUG</change>
+			<change type="TableString" operation="append">RDA</change>
+			<change type="TableString" operation="append">URSS</change>
+			<change type="TableString" operation="append">POL</change>
+			<change type="TableString" operation="append">TCH</change>
+			<change type="TableString" operation="append">CHI</change>
+			<change type="TableString" operation="append">NK</change>
+		</changes>
+	</ndfpatch>
+	
+	<!-- Same with coalitions here. -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="Clear PACT Armory (Coalitions)">
+		<changes>
+			<change operation="select" property="MapFactionToCoalition" key="1" />
+			<change operation="clear" type="TableString" />
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="All coalitions to NATO Armory">
+		<changes>
+			<change operation="select" property="MapFactionToCoalition" key="0" />
+			<change operation="clear" type="TableString" />
+			<change type="TableString" operation="append">EURO</change>
+			<change type="TableString" operation="append">SCAND</change>
+			<change type="TableString" operation="append">CMW</change>
+			<change type="TableString" operation="append">BLUEDRAG</change>
+			<change type="TableString" operation="append">LAND</change>
+			<change type="TableString" operation="append">NORAD</change>
+			<change type="TableString" operation="append">NLGR</change>
+			<change type="TableString" operation="append">NSWP</change>
+			<change type="TableString" operation="append">REDDRAG</change>
+			<change type="TableString" operation="append">FINPOL</change>
+			<change type="TableString" operation="append">YUGVAK</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

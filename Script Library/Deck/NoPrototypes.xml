@@ -1,0 +1,14 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="noProto">
+		<matchconditions>
+			<!-- Looks for all units that are prototypes -->
+			<matchcondition type="property" property="IsPrototype">True</matchcondition>
+		</matchconditions>
+		<changes>
+			<!-- And makes them not prototypes. -->
+			<change operation="set" property="IsPrototype" type="Boolean">False</change>
+			<!-- If you want to make all units prototype, replace "True" with "null" in line 6 and "False" with "True" in line 10 -->
+		</changes>
+	</ndfpatch>
+</wargamepatch>

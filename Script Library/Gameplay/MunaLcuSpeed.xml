@@ -1,0 +1,34 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<!-- Modifies the moving speed of both supply ships in the game. -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TMouvementHandlerLandVehicleDescriptor" name="lcuSpeed">
+		<matchconditions>
+			<matchcondition type="property" property="Maxspeed">20800</matchcondition>
+			<matchcondition type="property" property="UnitMovingType">9</matchcondition>
+			<matchcondition type="property" property="TempsDemiTour">5</matchcondition>
+			<matchcondition type="property" property="MaxAcceleration">2210</matchcondition>
+			<matchcondition type="property" property="MaxDeceleration">2210</matchcondition>
+			<matchcondition type="property" property="VehicleSubType">4</matchcondition>
+			<matchcondition type="property" property="TerrainsToIgnoreMask">16</matchcondition>
+			<!-- Here, I match the properties of all the properties of the instance I want to mod. Right now, it is hard to select a certain non-unique instance, because we cannot use the instance number as a match condition. The other way is the write the "place" of the instance in reference to all the instances, example: second from the top. Look at SupplySpeedGround.xml and SupplySpeedAir.xml for and example in use. -->
+		</matchconditions>
+		<changes>
+			<change operation="set" property="Maxspeed" type="Int32">312000</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TMouvementHandlerLandVehicleDescriptor" name="munaSpeed">
+		<matchconditions>
+			<matchcondition type="property" property="Maxspeed">13000</matchcondition>
+			<matchcondition type="property" property="UnitMovingType">9</matchcondition>
+			<matchcondition type="property" property="TempsDemiTour">10</matchcondition>
+			<matchcondition type="property" property="MaxAcceleration">2210</matchcondition>
+			<matchcondition type="property" property="MaxDeceleration">2210</matchcondition>
+			<matchcondition type="property" property="VehicleSubType">4</matchcondition>
+			<matchcondition type="property" property="TerrainsToIgnoreMask">16</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="Maxspeed" type="Int32">312000</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

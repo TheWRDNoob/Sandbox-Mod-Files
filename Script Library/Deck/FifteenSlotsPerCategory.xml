@@ -1,0 +1,186 @@
+<!-- THIS IS A COMMENT -->
+<!-- This .xml increases maximum slot capacity of each category. 15 is the maximum that can currently be handled by the engine. For more than 9 cards, another Int32 must be added to DefaultCostMatrix, hence the 6 lines of code in each category. Keys are the unit categories, and in order are: Log, Rec, Tank, Inf, Sup, Veh, Hel, Pla, Nav. -->
+<wargamepatch>
+	<!-- All unit categories have max slots increased by 6. (15 is the max handled by the engine.) -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckRuleManager" name="deckSlotsToFifteen">
+      <matchconditions>
+         <matchcondition type="property" property="__order">first</matchcondition>
+      </matchconditions>
+      <changes>
+         <!-- Sets max size of each category to 15. The key is the unit category. 3=Logistics, 10=Recon, 9=Tank, 6=Infantry, 13=Support, 8=Vehicle, 11=Helicopters, 7=Planes, 12=Naval. 15 seems to be the max number of deck cards. -->
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="3">15</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="10">15</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="9">15</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="6">15</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="13">15</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="8">15</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="11">15</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="7">15</change>
+         <change operation="set" type="Int32" property="DefaultSlotMatrix" key="12">15</change>
+
+         <!-- Adds a default activation price for each slot for each category, this is needed for more than 9 max slots to work. -->
+         <change operation="select" property="DefaultCostMatrix" key="3"/>
+         <change operation="clear" type="list" />
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="unselect" />
+         <change operation="select" property="DefaultCostMatrix" key="10"/>
+         <change operation="clear" type="list" />
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="unselect" />
+         <change operation="select" property="DefaultCostMatrix" key="9"/>
+         <change operation="clear" type="list" />
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="unselect" />
+         <change operation="select" property="DefaultCostMatrix" key="6"/>
+         <change operation="clear" type="list" />
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="unselect" />
+         <change operation="select" property="DefaultCostMatrix" key="13"/>
+         <change operation="clear" type="list" />
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="unselect" />
+         <change operation="select" property="DefaultCostMatrix" key="8"/>
+         <change operation="clear" type="list" />
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="unselect" />
+         <change operation="select" property="DefaultCostMatrix" key="11"/>
+         <change operation="clear" type="list" />
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="unselect" />
+         <change operation="select" property="DefaultCostMatrix" key="7"/>
+         <change operation="clear" type="list" />
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="unselect" />
+         <change operation="select" property="DefaultCostMatrix" key="12"/>
+         <change operation="clear" type="list" />
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="add" type="Int32">1</change>
+         <change operation="unselect" />
+      </changes>
+   </ndfpatch>
+</wargamepatch>

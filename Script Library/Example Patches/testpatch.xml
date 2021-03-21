@@ -1,0 +1,62 @@
+<wargamepatch>
+	<!-- 8 cards of Polish KUBs that cost $5 -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="KUBs for all">
+		<matchconditions>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_2K12_Kub</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="MaxPacks" type="UInt32">8</change>
+			<change property="ProductionPrice" key="0" type="Int32">5</change>
+		</changes>
+	</ndfpatch>
+	
+	<!-- All tanks are from 1940 -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" name="The Year Of The Tank">
+		<matchconditions>
+			<matchcondition type="property" property="Factory">9</matchcondition>
+		</matchconditions>
+		<changes>
+			 <!-- Some units don't have years. If the entry is currently "Unset", the tool doesn't know what type to change it to and it fails.
+				The forcetype attribute tells it to ignore the current type and use that one instead. You can get these values from the mod tool GUI -->
+			<change property="ProductionYear" type="UInt32">1940</change>
+		</changes>
+	</ndfpatch>
+	
+	<!-- Assign death blast from supply units to Motorstrelki '90 -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor">
+		<matchconditions>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_90_Motorstrelki</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="DeathExplosionAmmo">
+				<reference table="TAmmunition">
+					<matchconditions>
+						<matchcondition type="property" property="DescriptorId">00000000-0000-0000-0600-000007080000</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+		</changes>
+	</ndfpatch>
+	
+	<ndfcreate ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor" />
+	
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor">
+		<matchconditions>
+			<matchcondition type="property" property="__order">last</matchcondition>
+		</matchconditions>
+		<changes>
+			<change property="NameInMenuToken" type="LocalisationHash">8E14D59D2C0F8600</change>
+			<change property="AliasName" type="WideString">TestString</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>
+
+<!-- Red = "Tags", Green = "Attributes", Yellow = "Key", White = "Data" -->
+<!-- HTML's have starting tags with something like "This is HTML version 3" -->
+<!-- DescriptorId for TAmmo, not instance -->
+<!-- Look at Line 45 for modules without any unique identities. "__order" is order of instances. -->
+<!-- Use <ndfcreate/> for making instances -->
+<!-- A dump is a xml file of what the program reads (each instance a xml file) -->
+<!-- For collections, key = number row (0 is first) -->
+<!-- -->
+<!-- -->

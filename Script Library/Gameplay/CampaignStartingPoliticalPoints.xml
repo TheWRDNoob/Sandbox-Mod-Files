@@ -1,0 +1,37 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<!-- Changes 2nd Korean War, Climb Mt. Narodnaia, Crown Jewel, and Pusan Pocket campaign to start with 9999 Political Points for the player. This feature was never in any patch of the Sandbox Mod. -->
+	<ndfpatch ndf="pc\ndf\patchable\scenario\campdyn_2nd_korean_war\ndfscriptingforalternative1.ndfbin" table="TStrategicMapInitialisationParameters" name="2ndKoreanWarPP">
+		<matchconditions>
+			<matchcondition type="property" property="InitialPoliticalPoints">15</matchcondition>
+			<!-- Search for specific value aka original value. -->
+		</matchconditions>
+		<changes>
+			<change operation="set" property="InitialPoliticalPoints">9999</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\scenario\campdyn_climbnarodnaia\ndfscriptingforalternative1.ndfbin" table="TStrategicMapInitialisationParameters" name="narodnaiaPP">
+		<matchconditions>
+			<matchcondition type="property" property="InitialPoliticalPoints">40</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="InitialPoliticalPoints">9999</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\scenario\campdyn_crown_jewel\ndfscriptingforalternative1.ndfbin" table="TStrategicMapInitialisationParameters" name="CrownJewelsPP">
+		<matchconditions>
+			<matchcondition type="property" property="InitialPoliticalPoints">50</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="InitialPoliticalPoints">9999</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\scenario\campdyn_pusan_pocket\ndfscriptingforalternative1.ndfbin" table="TStrategicMapInitialisationParameters" name="PusanPocketPP">
+		<matchconditions>
+			<matchcondition type="property" property="InitialPoliticalPoints">30</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="InitialPoliticalPoints">9999</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

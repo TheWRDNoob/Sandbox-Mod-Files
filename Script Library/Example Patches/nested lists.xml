@@ -1,0 +1,36 @@
+<wargamepatch>
+	<!-- This will insert a record into an instance the below table (chosen by being the first one I found with nested list) -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TIASkirmishDescriptor" name="Nested Lists">
+		<matchconditions>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<!-- Add a map. Here, type is required for it to insert a Map and not overwrite the property with a new MapList
+			I'm not sure how to fix that without breaking the file format -->
+			<change operation="add" property="MissionAndUnitList_OnlyForTest" type="map">
+				<map>
+					<key type="Int32">16</key>
+					<value type="List" />
+				</map>
+			</change>
+			<!-- Navigate inwards to the selected list. Note the specification of the key -->
+			<change operation="select" property="MissionAndUnitList_OnlyForTest" key="16" />
+			<!-- Add a record to the inner list we created earlier -->
+			<change operation="add" type="ObjectReference">
+				<reference table="TUnitSpawnInfos">
+					<matchconditions>
+						<matchcondition type="property" property="__order">first</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+			<!-- And update it by specifying its key (0-indexed) -->
+			<change operation="set" key="0" type="ObjectReference">
+				<reference table="TUnitSpawnInfos">
+					<matchconditions>
+						<matchcondition type="property" property="__order">last</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

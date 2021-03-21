@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<wargamepatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TUniteAuSolDescriptor">
+		<matchconditions>
+			<matchcondition type="property" property="ClassNameForDebug">Unit_2K12_Kub</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="DeathExplosionAmmo">
+				<reference table="TAmmunition">
+					<matchconditions>
+						<matchcondition type="referencedby" table="TUniteAuSolDescriptor">
+							<matchconditions>
+								<matchcondition type="property" property="ClassNameForDebug">Unit_152mm_SpGH_Dana</matchcondition>
+							</matchconditions>
+						</matchcondition>
+					</matchconditions>
+				</reference>
+			</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

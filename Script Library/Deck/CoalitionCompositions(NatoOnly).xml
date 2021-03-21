@@ -1,0 +1,107 @@
+<!-- THIS IS A COMMENT -->
+<!-- This .xml sets only Eurocorps, Scandinavia, and Eastern Bloc as the only selectable coalitions when creating a deck (does not delete existing decks) and changes the countries included in each coalition to every country of the faction. Eventually, every faction will have two coalitions: one including DLC nations and the other not; all of them will have infinite availibility, with the "no coalition" decks being the former coalitions in the mod that had no availibility bonus. -->
+
+<wargamepatch>
+<!-- Key 0 means Blufor, 1 means Redfor.-->
+   <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="twoNatoCoalitions">
+      <matchconditions>
+         <matchcondition type="property" property="__order">first</matchcondition>
+      </matchconditions>
+      <changes>
+         <change operation="select" property="MapFactionToCoalition" key="0"/>
+         <change operation="clear" type="list" />
+         <change type="TableString" operation="add">EURO</change>
+         <change type="TableString" operation="add">SCAND</change>
+      </changes>
+   </ndfpatch>
+
+   <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="noPactCoalition">
+      <matchconditions>
+         <matchcondition type="property" property="__order">first</matchcondition>
+      </matchconditions>
+      <changes>
+         <change operation="select" property="MapFactionToCoalition" key="1"/>
+         <change operation="clear" type="list" />
+      </changes>
+   </ndfpatch>
+
+   <!-- <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="noNatoCountries">
+      <matchconditions>
+         <matchcondition type="property" property="__order">first</matchcondition>
+      </matchconditions>
+      <changes>
+         <change operation="select" property="MapFactionToCountry" key="0"></change>
+         <change operation="clear" type="list" />
+      </changes>
+   </ndfpatch>
+
+   <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="noPactCountries">
+      <matchconditions>
+         <matchcondition type="property" property="__order">first</matchcondition>
+      </matchconditions>
+      <changes>
+         <change operation="select" property="MapFactionToCountry" key="1"></change>
+         <change operation="clear" type="list" />
+      </changes>
+   </ndfpatch> -->
+
+   <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="euroComposition">
+      <matchconditions>
+         <matchcondition type="property" property="__order">first</matchcondition>
+      </matchconditions>
+      <changes>
+         <change operation="select" property="MapCoalitionToCountry" key="EURO"/>
+         <change operation="clear" type="list" />
+         <change type="TableString" operation="add">US</change>
+         <change type="TableString" operation="add">UK</change>
+         <change type="TableString" operation="add">FR</change>
+         <change type="TableString" operation="add">RFA</change>
+         <change type="TableString" operation="add">CAN</change>
+         <change type="TableString" operation="add">SWE</change>
+         <change type="TableString" operation="add">NOR</change>
+         <change type="TableString" operation="add">DAN</change>
+         <change type="TableString" operation="add">ANZ</change>
+         <change type="TableString" operation="add">JAP</change>
+         <change type="TableString" operation="add">ROK</change>
+         <change type="TableString" operation="add">URSS</change>
+         <change type="TableString" operation="add">POL</change>
+         <change type="TableString" operation="add">TCH</change>
+         <change type="TableString" operation="add">RDA</change>
+         <change type="TableString" operation="add">CHI</change>
+         <change type="TableString" operation="add">NK</change>
+         <change operation="unselect" />
+      </changes>
+   </ndfpatch>
+
+   <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TDeckAttributes" name="scandiComposition">
+      <matchconditions>
+         <matchcondition type="property" property="__order">first</matchcondition>
+      </matchconditions>
+      <changes>
+         <change operation="select" property="MapCoalitionToCountry" key="SCAND"/>
+         <change operation="clear" type="list" />
+         <change type="TableString" operation="add">US</change>
+         <change type="TableString" operation="add">UK</change>
+         <change type="TableString" operation="add">FR</change>
+         <change type="TableString" operation="add">RFA</change>
+         <change type="TableString" operation="add">CAN</change>
+         <change type="TableString" operation="add">SWE</change>
+         <change type="TableString" operation="add">NOR</change>
+         <change type="TableString" operation="add">DAN</change>
+         <change type="TableString" operation="add">ANZ</change>
+         <change type="TableString" operation="add">JAP</change>
+         <change type="TableString" operation="add">ROK</change>
+         <change type="TableString" operation="add">HOL</change>
+         <change type="TableString" operation="add">ISR</change>
+         <change type="TableString" operation="add">URSS</change>
+         <change type="TableString" operation="add">POL</change>
+         <change type="TableString" operation="add">TCH</change>
+         <change type="TableString" operation="add">RDA</change>
+         <change type="TableString" operation="add">CHI</change>
+         <change type="TableString" operation="add">NK</change>
+         <change type="TableString" operation="add">FIN</change>
+         <change type="TableString" operation="add">YUG</change>
+         <change operation="unselect" />
+      </changes>
+   </ndfpatch>
+</wargamepatch>

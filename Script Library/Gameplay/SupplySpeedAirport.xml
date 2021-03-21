@@ -1,0 +1,15 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<!-- This patch changes the speed in which planes will reload. -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TModernWarfareSupplyDescriptor" name="airSupply">
+		<matchconditions>
+			<matchcondition type="property" property="__order">last</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="FuelSupplyBySecond">30000</change>
+			<change operation="set" property="HealthSupplyBySecond">100</change>
+			<change operation="set" property="AmmunitionSupplyBySecond">25000</change>
+			<!-- Original values were 30, 0.1, and 25. -->
+		</changes>
+	</ndfpatch>
+</wargamepatch>

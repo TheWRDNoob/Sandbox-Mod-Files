@@ -1,0 +1,18 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<ndfpatch ndf="pc\ndf\patchable\gfx\gdconstanteoriginal.ndfbin" table="TModernWarfareTunableConstante" name="aiMoney">
+		<matchconditions>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<!-- BonusMoney is how many points extra the ai gets at the start. Original values were 1000 for medium, 1500 for hard, and 2000 for very hard. There is no BonusMoneyEasy because it does not get any extra points. This XML changes the Very Hard AI bonuses to be identical to human players (aka no bonuses at all).-->
+			<!--<change operation="set" property="BonusMoneyHard" type="Int32">0</change>-->
+
+			<!--Probably multiplier for availibility bonus.-->
+			<change operation="set" property="BonusFluxEasy" type="UInt32">1</change>
+
+			<!-- This is how much more money the ai gets in income. 0.1 = +10%, 1 = 100%, etc. I doubt negative values are possible. -->
+			<change operation="set" property="PercentMoneyForEasy" type="Float32">0</change>
+		</changes>
+	</ndfpatch>
+</wargamepatch>

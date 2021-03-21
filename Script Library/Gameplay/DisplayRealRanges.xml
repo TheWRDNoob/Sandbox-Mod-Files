@@ -1,0 +1,13 @@
+<!-- THIS IS A COMMENT -->
+<wargamepatch>
+	<!-- Little known fact that the displayed ranges in Wargame are 3.5x what they should be in scale of the models. Modifying the follwing value will change everything from ranges in-game to armory stats. -->
+	<ndfpatch ndf="pc\ndf\patchable\gfx\gdconstanteoriginal.ndfbin" table="TTunableConstante" name="realRanges">
+		<matchconditions>
+			<matchcondition type="property" property="__order">first</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="MultiplicateurMetreRTSVersDistanceFeedbackTactique">0.1</change>
+			<!-- Original value was 0.35. -->
+		</changes>
+	</ndfpatch>
+</wargamepatch>
