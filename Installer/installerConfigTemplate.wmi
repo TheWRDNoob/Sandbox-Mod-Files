@@ -137,14 +137,14 @@
           <RenameEntry hash="D1C239CEC3010000" value="Infinite Units (No DLC)"></RenameEntry>
           <RenameEntry hash="5EF36058D6941E00" value="Wargame: Red Dragon Sandbox Mod"></RenameEntry>
         </AlterDictionary>
-        <ReplaceImage sourcePath="Files\screen.dds" targetPath="Data\WARGAME\PC\%ZZ_4.dat-path%\ZZ_4.dat" targetContentPath="pc\texture\pack\outgametextures.ppk|+pc\texture\assets\2d\interface\useoutgame\hq\hq_screen_bg.tgv" />
-        <ReplaceContent sourcePath="Files\outgame.wmv" targetPath="Data\WARGAME\PC\%Data.dat-path%\Data.dat" targetContentPath="assets\videos\outgame.wmv" />
+        <ReplaceImage sourcePath="Modded\screen.dds" targetPath="Data\WARGAME\PC\%ZZ_4.dat-path%\ZZ_4.dat" targetContentPath="pc\texture\pack\outgametextures.ppk|+pc\texture\assets\2d\interface\useoutgame\hq\hq_screen_bg.tgv" />
+        <ReplaceContent sourcePath="Modded\outgame.wmv" targetPath="Data\WARGAME\PC\%Data.dat-path%\Data.dat" targetContentPath="assets\videos\outgame.wmv" />
       </Component>
       <Component name="uninst" type="Exclusive" text="Uninstall">
         <CopyGameFile sourcePath="Data\WARGAME\PC\%NDF_Win.dat-path%\NDF_Win.dat_pre-sandbox" targetPath="Data\WARGAME\PC\%NDF_Win.dat-path%\NDF_Win.dat" />
-        <CopyModFile sourcePath="Files\Original\ZZ_Win-steam.dat" targetPath="Data\WARGAME\PC\%ZZ_Win.dat|interface_outgame-path%\ZZ_Win.dat"></CopyModFile>
-        <ReplaceImage sourcePath="Files\Original\screen.dds" targetPath="Data\WARGAME\PC\%ZZ_4.dat-path%\ZZ_4.dat" targetContentPath="pc\texture\pack\outgametextures.ppk|+pc\texture\assets\2d\interface\useoutgame\hq\hq_screen_bg.tgv" />
-        <ReplaceContent sourcePath="Files\Original\outgame.wmv" targetPath="Data\WARGAME\PC\%Data.dat-path%\Data.dat" targetContentPath="assets\videos\outgame.wmv" />
+        <CopyModFile sourcePath="Original\ZZ_Win-steam.dat" targetPath="Data\WARGAME\PC\%ZZ_Win.dat|interface_outgame-path%\ZZ_Win.dat"></CopyModFile>
+        <ReplaceImage sourcePath="Original\screen.dds" targetPath="Data\WARGAME\PC\%ZZ_4.dat-path%\ZZ_4.dat" targetContentPath="pc\texture\pack\outgametextures.ppk|+pc\texture\assets\2d\interface\useoutgame\hq\hq_screen_bg.tgv" />
+        <ReplaceContent sourcePath="Original\outgame.wmv" targetPath="Data\WARGAME\PC\%Data.dat-path%\Data.dat" targetContentPath="assets\videos\outgame.wmv" />
       </Component>
     </Component>
   </InstallCommands>
