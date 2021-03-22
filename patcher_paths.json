@@ -80,7 +80,13 @@
         "UnitAvailability.xml"
       ]
     },
-    "No Activation Point Bonuses": {
+    "Every Deck Gets 900 Activation Points By Default": {
+      "desc": "",
+      "paths": [
+        "DefaultActivationPoints.xml"
+      ]
+    },
+    "No Activation Countries/Coalitions Get Activation Bonuses": {
       "desc": "",
       "paths": [
         "NoDeckApBonus.xml"
