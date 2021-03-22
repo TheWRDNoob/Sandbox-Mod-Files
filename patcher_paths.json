@@ -1,35 +1,176 @@
 {
   "Lobby": {
-    "More Starting Point Options": ["MapPoints.xml"],
-    "More Income Options": ["IncreasedIncome.xml"],
-    "More Time Options": ["TimeOptions.xml"],
-    "10 vs 10 Maps Unlocked": ["10Vs10Unlock.xml"],
-    "Naval Maps Unlocked": ["NavalMapUnlock.xml"],
-    "Easy AI Gets No Bonuses": ["EasyAiNoBonus.xml"]
+    "More Starting Point Options": {
+      "desc": "",
+      "paths": [
+        "MapPoints.xml"
+      ]
+    },
+    "More Income Options": {
+      "desc": "",
+      "paths": [
+        "IncreasedIncome.xml"
+      ]
+    },
+    "More Time Options": {
+      "desc": "",
+      "paths": [
+        "TimeOptions.xml"
+      ]
+    },
+    "10 vs 10 Maps Unlocked": {
+      "desc": "",
+      "paths": [
+        "10Vs10Unlock.xml"
+      ]
+    },
+    "Naval Maps Unlocked": {
+      "desc": "",
+      "paths": [
+        "NavalMapUnlock.xml"
+      ]
+    },
+    "Easy AI Gets No Bonuses": {
+      "desc": "",
+      "paths": [
+        "EasyAiNoBonus.xml"
+      ]
+    }
   },
   "Deck": {
-    "All Units and Nations Become Blufor, Remove Other Coalitions": ["Nationalite.xml", "OtanUnitIds.xml", "AllCountriesNato.xml", "AllCountryArmoriesNato.xml", "CoalitionCompositions(NatoOnly).xml", "FlagReferences.xml", "FlagSize.xml"],
-    "No Units are Prototypes": ["NoPrototypes.xml"],
-    "15 Slots per Category": ["FifteenSlotsPerCategory.xml"],
-    "9 Slots per Category": ["NineSlotsPerCategory.xml"],
-    "99 Deck Cards per Unit": ["MaxPacks.xml"],
-    "Every Unit has 9999 Availibility": ["UnitAvailability.xml"],
-    "No Activation Point Bonuses": ["NoDeckApBonus.xml"],
-    "EuroCorps, Scand, Eastern Blog, and Red Dragon get Avail Buffs": ["CoalitionBonuses.xml"]
+    "All Units and Nations Become Blufor, Remove Other Coalitions": {
+      "desc": "",
+      "paths": [
+        "Nationalite.xml",
+        "OtanUnitIds.xml",
+        "AllCountriesNato.xml",
+        "AllCountryArmoriesNato.xml",
+        "CoalitionCompositions(NatoOnly).xml",
+        "FlagReferences.xml",
+        "FlagSize.xml"
+      ]
+    },
+    "No Units are Prototypes": {
+      "desc": "",
+      "paths": [
+        "NoPrototypes.xml"
+      ]
+    },
+    "15 Slots per Category": {
+      "desc": "",
+      "paths": [
+        "FifteenSlotsPerCategory.xml"
+      ]
+    },
+    "9 Slots per Category": {
+      "desc": "",
+      "paths": [
+        "NineSlotsPerCategory.xml"
+      ]
+    },
+    "99 Deck Cards per Unit": {
+      "desc": "",
+      "paths": [
+        "MaxPacks.xml"
+      ]
+    },
+    "Every Unit has 9999 Availibility": {
+      "desc": "",
+      "paths": [
+        "UnitAvailability.xml"
+      ]
+    },
+    "No Activation Point Bonuses": {
+      "desc": "",
+      "paths": [
+        "NoDeckApBonus.xml"
+      ]
+    },
+    "EuroCorps, Scand, Eastern Blog, and Red Dragon get Avail Buffs": {
+      "desc": "",
+      "paths": [
+        "CoalitionBonuses.xml"
+      ]
+    }
   },
   "Gameplay": {
-    "FOBs Have Unlimited Supplies": ["InfiniteFobSupply.xml"],
-    "Ground/Sea Units Reload and Refuel Faster": ["SupplySpeedGround.xml"],
-    "Planes Reload and Refuel Faster": ["SupplySpeedAirport.xml"],
-    "Naval Supply Ships Speed Buff": ["MunaLcuSpeed.xml"],
-    "All Units Have Unlimited Fuel": ["InfiniteFuel.xml"],
-    "All Units Have Unlimited Health": ["InfiniteHealth.xml"],
-    "All Units Have Unlimited Ammo": ["InfiniteAmmo.xml"],
-    "All Units Have 1 Second Spawn Time": ["SpawnTime.xml"],
-    "All Planes Fly Higher": ["PlaneAltitude.xml"],
-    "All Ground Vehicles are Slower": ["VehicleSpeeds.xml"],
-    "All Weapons Are Less Accurate": ["AccuracyReduction.xml"],
-    "Infinite Starting Political Points In Campaign": ["CampaignStartingPoliticalPoints.xml"],
-    "Display Realistic Ranges In Game": ["DisplayRealRanges.xml"]
+    "FOBs Have Unlimited Supplies": {
+      "desc": "",
+      "paths": [
+        "InfiniteFobSupply.xml"
+      ]
+    },
+    "Ground/Sea Units Reload and Refuel Faster": {
+      "desc": "",
+      "paths": [
+        "SupplySpeedGround.xml"
+      ]
+    },
+    "Planes Reload and Refuel Faster": {
+      "desc": "",
+      "paths": [
+        "SupplySpeedAirport.xml"
+      ]
+    },
+    "Naval Supply Ships Speed Buff": {
+      "desc": "",
+      "paths": [
+        "MunaLcuSpeed.xml"
+      ]
+    },
+    "All Units Have Unlimited Fuel": {
+      "desc": "",
+      "paths": [
+        "InfiniteFuel.xml"
+      ]
+    },
+    "All Units Have Unlimited Health": {
+      "desc": "",
+      "paths": [
+        "InfiniteHealth.xml"
+      ]
+    },
+    "All Units Have Unlimited Ammo": {
+      "desc": "",
+      "paths": [
+        "InfiniteAmmo.xml"
+      ]
+    },
+    "All Units Have 1 Second Spawn Time": {
+      "desc": "",
+      "paths": [
+        "SpawnTime.xml"
+      ]
+    },
+    "All Planes Fly Higher": {
+      "desc": "",
+      "paths": [
+        "PlaneAltitude.xml"
+      ]
+    },
+    "All Ground Vehicles are Slower": {
+      "desc": "",
+      "paths": [
+        "VehicleSpeeds.xml"
+      ]
+    },
+    "All Weapons Are Less Accurate": {
+      "desc": "",
+      "paths": [
+        "AccuracyReduction.xml"
+      ]
+    },
+    "Infinite Starting Political Points In Campaign": {
+      "desc": "",
+      "paths": [
+        "CampaignStartingPoliticalPoints.xml"
+      ]
+    },
+    "Display Realistic Ranges In Game": {
+      "desc": "Divides all in-game ranges by 3.5 but does not effect gameplay",
+      "paths": [
+        "DisplayRealRanges.xml"
+      ]
+    }
   }
 }
