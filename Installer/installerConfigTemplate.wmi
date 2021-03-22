@@ -142,7 +142,14 @@
       </Component>
       <Component name="uninst" type="Exclusive" text="Uninstall">
         <CopyGameFile sourcePath="Data\WARGAME\PC\%NDF_Win.dat-path%\NDF_Win.dat_pre-sandbox" targetPath="Data\WARGAME\PC\%NDF_Win.dat-path%\NDF_Win.dat" />
+        <RemoveFile sourcePath="Data\WARGAME\PC\%NDF_Win.dat-path%\NDF_Win.dat_pre-sandbox"/>
         <CopyModFile sourcePath="Original\ZZ_Win-steam.dat" targetPath="Data\WARGAME\PC\%ZZ_Win.dat|interface_outgame-path%\ZZ_Win.dat"></CopyModFile>
+        <ReplaceImage sourcePath="Original\screen.dds" targetPath="Data\WARGAME\PC\%ZZ_4.dat-path%\ZZ_4.dat" targetContentPath="pc\texture\pack\outgametextures.ppk|+pc\texture\assets\2d\interface\useoutgame\hq\hq_screen_bg.tgv" />
+        <ReplaceContent sourcePath="Original\outgame.wmv" targetPath="Data\WARGAME\PC\%Data.dat-path%\Data.dat" targetContentPath="assets\videos\outgame.wmv" />
+      </Component>
+      <Component name="hard_uninst" type="Exclusive" text="Hard Uninstall">
+        <CopyModFile sourcePath="Original\NDF_Win.dat" targetPath="Data\WARGAME\PC\%NDF_Win.dat-path%\NDF_Win.dat" />
+        <CopyModFile sourcePath="Original\ZZ_Win.dat" targetPath="Data\WARGAME\PC\%ZZ_Win.dat|interface_outgame-path%\ZZ_Win.dat"></CopyModFile>
         <ReplaceImage sourcePath="Original\screen.dds" targetPath="Data\WARGAME\PC\%ZZ_4.dat-path%\ZZ_4.dat" targetContentPath="pc\texture\pack\outgametextures.ppk|+pc\texture\assets\2d\interface\useoutgame\hq\hq_screen_bg.tgv" />
         <ReplaceContent sourcePath="Original\outgame.wmv" targetPath="Data\WARGAME\PC\%Data.dat-path%\Data.dat" targetContentPath="assets\videos\outgame.wmv" />
       </Component>
