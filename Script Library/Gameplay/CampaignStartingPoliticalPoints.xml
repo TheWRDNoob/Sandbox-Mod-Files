@@ -20,13 +20,21 @@
 	</ndfpatch>
 	<ndfpatch ndf="pc\ndf\patchable\scenario\campdyn_crown_jewel\ndfscriptingforalternative1.ndfbin" table="TStrategicMapInitialisationParameters" name="CrownJewelsPP">
 		<matchconditions>
-			<matchcondition type="property" property="InitialPoliticalPoints">50</matchcondition>
+			<matchcondition type="property" property="ReconnaissanceAerienne_NbActionInitialInShop">6</matchcondition>
 		</matchconditions>
 		<changes>
 			<change operation="set" property="InitialPoliticalPoints">9999</change>
 		</changes>
 	</ndfpatch>
 	<ndfpatch ndf="pc\ndf\patchable\scenario\campdyn_pusan_pocket\ndfscriptingforalternative1.ndfbin" table="TStrategicMapInitialisationParameters" name="PusanPocketPP">
+		<matchconditions>
+			<matchcondition type="property" property="InitialPoliticalPoints">30</matchcondition>
+		</matchconditions>
+		<changes>
+			<change operation="set" property="InitialPoliticalPoints">9999</change>
+		</changes>
+	</ndfpatch>
+	<ndfpatch ndf="pc\ndf\patchable\scenario\campdyn_proto1\ndfscriptingforalternative1.ndfbin" table="TStrategicMapInitialisationParameters" name="PusanPocketPP">
 		<matchconditions>
 			<matchcondition type="property" property="InitialPoliticalPoints">30</matchcondition>
 		</matchconditions>
