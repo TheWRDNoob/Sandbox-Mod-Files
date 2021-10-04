@@ -13,7 +13,7 @@
       <Screens>
         <WelcomeScreen>
           <Header Text="W:RD Sandbox Mod Installer" />
-          <Description Text="This is the installation for The Sandbox Mod %mod_version%. A free mod for EUGEN SYSTEMS' Wargame: Red Dragon full release version (%game_version%). &#xD;&#xA;&#xD;&#xA;NOTE: If you select &quot;All units to Bluefor&quot;, all of your Redfor decks will be deleted at game launch! Select backup profile or copy your Wargame profile manually to save these decks. Also, set your lobby Opposition as Blufor so that it is Blue vs Blue; no Redfor decks besides the default will work.&#xD;&#xA;&#xD;&#xA;For further information, go to the modding section of the Wargame Forums, and for questions, PM the W:AB Noob on the Wargame Forums.&#xD;&#xA;(Mod released August, 2014)&#xD;&#xA;Click the &quot;Next&quot; button to continue." />
+          <Description Text="This is the installer for The Sandbox Mod %mod_version%. A free mod for EUGEN SYSTEMS' Wargame: Red Dragon full release version (%game_version%). &#xD;&#xA;&#xD;&#xA;NOTE: If you select &quot;All units to Bluefor&quot;, all of your Redfor decks will be deleted at game launch! Select backup profile or copy your Wargame profile manually to save these decks. Also, set your lobby Opposition as Blufor so that it is Blue vs Blue; no Redfor decks besides the default will work.&#xD;&#xA;&#xD;&#xA;For further information, go to the modding section of the Wargame Forums, and for questions, PM the W:AB Noob on the Wargame Forums.&#xD;&#xA;(Mod released August, 2014)&#xD;&#xA;Click the &quot;Next&quot; button to continue." />
           <BackgroundImage Path="Extra\Backgrounds\f18.jpg" />
         </WelcomeScreen>
         <LocationScreen>
@@ -37,7 +37,7 @@
           <BackgroundImage Path="Extra\Backgrounds\rafale.jpg" />
         </InstallCompletedScreen>
         <InstallFailedScreen>
-          <Description Text="The installation has failed. If uninstalling, try selecting &quot;Do Not Restore Profile&quot;. Otherwise, feel free to contact me on the forums of ModDb." />
+          <Description Text="The installation has failed. Check the #common-questions channel on the Sandbox Mod Discord to see if this is a common problem." />
           <BackgroundImage Path="Extra\Backgrounds\ships.jpg" />
         </InstallFailedScreen>
         <InstallCanceledScreen>
@@ -139,19 +139,6 @@
         </AlterDictionary>
         <ReplaceImage sourcePath="Modded\screen.dds" targetPath="Data\WARGAME\PC\%ZZ_4.dat-path%\ZZ_4.dat" targetContentPath="pc\texture\pack\outgametextures.ppk|+pc\texture\assets\2d\interface\useoutgame\hq\hq_screen_bg.tgv" />
         <ReplaceContent sourcePath="Modded\outgame.wmv" targetPath="Data\WARGAME\PC\%Data.dat-path%\Data.dat" targetContentPath="assets\videos\outgame.wmv" />
-      </Component>
-      <Component name="uninst" type="Exclusive" text="Uninstall">
-        <CopyGameFile sourcePath="Data\WARGAME\PC\%NDF_Win.dat-path%\NDF_Win.dat_pre-sandbox" targetPath="Data\WARGAME\PC\%NDF_Win.dat-path%\NDF_Win.dat" />
-        <RemoveFile sourcePath="Data\WARGAME\PC\%NDF_Win.dat-path%\NDF_Win.dat_pre-sandbox"/>
-        <CopyModFile sourcePath="Original\ZZ_Win-steam.dat" targetPath="Data\WARGAME\PC\%ZZ_Win.dat|interface_outgame-path%\ZZ_Win.dat"></CopyModFile>
-        <ReplaceImage sourcePath="Original\screen.dds" targetPath="Data\WARGAME\PC\%ZZ_4.dat-path%\ZZ_4.dat" targetContentPath="pc\texture\pack\outgametextures.ppk|+pc\texture\assets\2d\interface\useoutgame\hq\hq_screen_bg.tgv" />
-        <ReplaceContent sourcePath="Original\outgame.wmv" targetPath="Data\WARGAME\PC\%Data.dat-path%\Data.dat" targetContentPath="assets\videos\outgame.wmv" />
-      </Component>
-      <Component name="hard_uninst" type="Exclusive" text="Hard Uninstall">
-        <CopyModFile sourcePath="Original\NDF_Win.dat" targetPath="Data\WARGAME\PC\%NDF_Win.dat-path%\NDF_Win.dat" />
-        <CopyModFile sourcePath="Original\ZZ_Win.dat" targetPath="Data\WARGAME\PC\%ZZ_Win.dat|interface_outgame-path%\ZZ_Win.dat"></CopyModFile>
-        <ReplaceImage sourcePath="Original\screen.dds" targetPath="Data\WARGAME\PC\%ZZ_4.dat-path%\ZZ_4.dat" targetContentPath="pc\texture\pack\outgametextures.ppk|+pc\texture\assets\2d\interface\useoutgame\hq\hq_screen_bg.tgv" />
-        <ReplaceContent sourcePath="Original\outgame.wmv" targetPath="Data\WARGAME\PC\%Data.dat-path%\Data.dat" targetContentPath="assets\videos\outgame.wmv" />
       </Component>
     </Component>
   </InstallCommands>
