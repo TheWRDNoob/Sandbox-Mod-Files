@@ -20,7 +20,7 @@
       <matchcondition type="property" property="FlyingAltitude">39000</matchcondition>
     </matchconditions>
     <changes>
-      <change operation="set" property="FlyingAltitude" type="Int32">28750</change>
+      <change operation="set" property="FlyingAltitude" type="Int32">48750</change>
     </changes>
   </ndfpatch>
   <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TMouvementHandlerAirplaneDescriptor" name="1250Alt">
