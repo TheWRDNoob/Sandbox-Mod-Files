@@ -18,14 +18,15 @@
 			<change property="CountriesNATO" type="TableString" operation="append">ROK</change>
 			<change property="CountriesNATO" type="TableString" operation="append">HOL</change>
 			<change property="CountriesNATO" type="TableString" operation="append">ISR</change>
-			<change property="CountriesNATO" type="TableString" operation="append">FIN</change>
-			<change property="CountriesNATO" type="TableString" operation="append">YUG</change>
+			<change property="CountriesNATO" type="TableString" operation="append">SA</change>
 			<change property="CountriesNATO" type="TableString" operation="append">RDA</change>
 			<change property="CountriesNATO" type="TableString" operation="append">URSS</change>
 			<change property="CountriesNATO" type="TableString" operation="append">POL</change>
 			<change property="CountriesNATO" type="TableString" operation="append">TCH</change>
 			<change property="CountriesNATO" type="TableString" operation="append">CHI</change>
 			<change property="CountriesNATO" type="TableString" operation="append">NK</change>
+			<change property="CountriesNATO" type="TableString" operation="append">FIN</change>
+			<change property="CountriesNATO" type="TableString" operation="append">YUG</change>
 		</changes>
 	</ndfpatch>
 </wargamepatch>

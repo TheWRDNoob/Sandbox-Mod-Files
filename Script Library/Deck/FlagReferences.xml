@@ -25,245 +25,257 @@
 				</map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">CAN</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/CAN_FLAG.png</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">CAN</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/CAN_FLAG.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">DAN</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                           <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/DAN_flag.png</matchcondition>
-									<!-- Note: Some flag textures have different names, for example, this Danish one here. The patcher is case-sensitive, so "_flag" =/= "_FLAG". -->
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">DAN</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/DAN_flag.png</matchcondition>
+                                        <!-- Note: Some flag textures have different names, for example, this Danish one here. The patcher is case-sensitive, so "_flag" =/= "_FLAG". -->
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">FR</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/FR_FLAG.png</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">FR</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/FR_FLAG.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">NOR</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/NOR_flag.png</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">NOR</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/NOR_flag.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">POL</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/POL_FLAG.png</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">POL</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/POL_FLAG.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">RDA</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/RDA_flag.png</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">RDA</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/RDA_flag.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">RFA</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/RFA_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">RFA</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/RFA_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">SWE</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/SWE_flag.png</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">SWE</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/SWE_flag.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">TCH</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/CEZ_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">TCH</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/CEZ_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">URSS</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/URSS_FLAG.png</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">URSS</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/URSS_FLAG.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">US</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/US_flag.png</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">US</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/US_flag.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">NK</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/NK_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">NK</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/NK_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">ROK</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/ROK_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">ROK</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/ROK_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">CHI</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/CHI_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">CHI</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/CHI_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">JAP</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/JAP_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">JAP</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/JAP_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">ANZ</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/ANZ_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">ANZ</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/ANZ_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
-            <map>
-                <key type="TableString">HOL</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/HOL_FLAG.png</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
-			</change>
-			<change property="MapCountryFlag_Long" operation="append" type="map">
-				<map>
-                <key type="TableString">ISR</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/ISR_FLAG.png</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                <map>
+                    <key type="TableString">HOL</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/HOL_FLAG.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
 				<map>
-                <key type="TableString">FIN</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/FIN_FLAG.png</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                    <key type="TableString">ISR</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/ISR_FLAG.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
 				<map>
-                <key type="TableString">YUG</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/YUG_FLAG.png</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                    <key type="TableString">FIN</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/FIN_FLAG.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
+			</change>
+			<change property="MapCountryFlag_Long" operation="append" type="map">
+				<map>
+                    <key type="TableString">YUG</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/YUG_FLAG.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
+			</change>
+			<change property="MapCountryFlag_Long" operation="append" type="map">
+				<map>
+                    <key type="TableString">SA</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/SA_FLAG.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
       </changes>
 	</ndfpatch>
@@ -280,135 +292,135 @@
 			<change property="MapCoalitionFlag_Long" operation="clear" />
 			<change property="MapCoalitionFlag_Long" operation="append" type="map">
 				<map>
-                <key type="TableString">EURO</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/EURO_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                    <key type="TableString">EURO</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/EURO_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCoalitionFlag_Long" operation="append" type="map">
 				<map>
-                <key type="TableString">NSWP</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/NSWP_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                    <key type="TableString">NSWP</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/NSWP_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCoalitionFlag_Long" operation="append" type="map">
 				<map>
-                <key type="TableString">BLUEDRAG</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/BLUEDRAGONS_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                    <key type="TableString">BLUEDRAG</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/BLUEDRAGONS_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCoalitionFlag_Long" operation="append" type="map">
 				<map>
-                <key type="TableString">REDDRAG</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/REDDRAGONS_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                    <key type="TableString">REDDRAG</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/REDDRAGONS_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCoalitionFlag_Long" operation="append" type="map">
 				<map>
-                <key type="TableString">SCAND</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/SCANDINAVIA_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                    <key type="TableString">SCAND</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/SCANDINAVIA_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCoalitionFlag_Long" operation="append" type="map">
 				<map>
-                <key type="TableString">CMW</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/CMW_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                    <key type="TableString">CMW</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/CMW_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCoalitionFlag_Long" operation="append" type="map">
 				<map>
-                <key type="TableString">NORAD</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/NORAD_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                    <key type="TableString">NORAD</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/NORAD_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCoalitionFlag_Long" operation="append" type="map">
 				<map>
-                <key type="TableString">LAND</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/LAND_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                    <key type="TableString">LAND</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/LAND_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCoalitionFlag_Long" operation="append" type="map">
 				<map>
-                <key type="TableString">NLGR</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/NLGR_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                    <key type="TableString">NLGR</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/NLGR_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCoalitionFlag_Long" operation="append" type="map">
 				<map>
-                <key type="TableString">FINPOL</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/FINPOL_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                    <key type="TableString">FINPOL</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/FINPOL_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
 			<change property="MapCoalitionFlag_Long" operation="append" type="map">
 				<map>
-                <key type="TableString">YUGVAK</key>
-                <value type="ObjectReference">
-                    <reference table="TUIResourceTexture">
-                        <matchconditions>
-                            <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/YUGVAK_FLAG.PNG</matchcondition>
-                        </matchconditions>
-                    </reference>
-                </value>
-            </map>
+                    <key type="TableString">YUGVAK</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/YUGVAK_FLAG.PNG</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
 			</change>
       </changes>
 	</ndfpatch>

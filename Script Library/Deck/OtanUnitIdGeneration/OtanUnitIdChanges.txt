@@ -1,31 +1,15 @@
-<wargamepatch>
-	<!-- This was a terrifying monster of an XML... It required exporting the data of TUniteAuSolDescriptor and writing a Python script to analyze the log and produce this. In TShowRoomDeckSerializer, there are two map lists, one for Blufor and one for Redfor. In each map, there is a key(UInt32 numbers that go in order) and an ObjectReference to the unit. Since powercrystal's patcher has no recursive function, this code had to be spelled out for every single unit in the game. -->
-    <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TShowRoomDeckSerializer" name="Add every unit to OtanUnitIds">
-        <matchconditions>
-            <matchcondition type="property" property="__order">last</matchcondition>
-            <!-- Selects the last instance of TShowRoomDeckSerializer. (There is only 1 instance.) -->
-        </matchconditions>
-        <changes>
-            <change property="OtanUnitIds" operation="clear" />
-            <change property="PactUnitIds" operation="clear" />
-            <!-- Clearing both lists out. -->
             <change property="OtanUnitIds" operation="append" type="map">
-				<!-- Add a new map with the following properties: -->
                 <map>
                     <key type="UInt32">1</key>
-                    <!-- Key is goes up by 1 for every unit -->
                     <value type="ObjectReference">
-                        <!-- Set value to an ObjectReference that points to... -->
                         <reference table="TUniteDescriptor">
                             <matchconditions>
                                 <matchcondition type="property" property="ClassNameForDebug">Building_FOB_ANZ</matchcondition>
-                                <!-- Whatever unit that is this ClassNameForDebug value. ClassNameForDebug's are unique to each unit, so there is only one possible instance that fufills this condition. -->
                             </matchconditions>
                         </reference>
                     </value>
                 </map>
             </change>
-		    <!-- And now do the same thing more than 2000 times. -->    
             <change property="OtanUnitIds" operation="append" type="map">
                 <map>
                     <key type="UInt32">2</key>
@@ -25730,6 +25714,3 @@
                     </value>
                 </map>
             </change>
-        </changes>
-    </ndfpatch>
-</wargamepatch>
