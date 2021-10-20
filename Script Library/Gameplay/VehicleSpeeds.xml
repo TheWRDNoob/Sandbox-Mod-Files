@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- THIS IS A COMMENT -->
 <wargamepatch>
-  <!-- Patch 0.1 -->
+  <!-- Patch 0.2 -->
   <!-- Land Vehicle Speeds -->
   <!-- Road speeds: wheeled=120, tracked=110, heavytracked=88 -->
   <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TMouvementHandlerLandVehicleDescriptor" name="NoRoadBonus">
@@ -89,20 +89,28 @@
       <change operation="set" property="Maxspeed" type="Int32">4368</change>
     </changes>
   </ndfpatch>
-  <!--<ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TMouvementHandlerAirplaneDescriptor" name="30Spd">
-		<matchconditions>
-			<matchcondition type="property" property="Maxspeed">1560</matchcondition>
-		</matchconditions>
-		<changes>
-			<change operation="set" property="Maxspeed" type="Int32">1248</change>
-		</changes>
-	</ndfpatch>  -->
-  <!-- <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TMouvementHandlerAirplaneDescriptor" name="30Spd">
-		<matchconditions>
-			<matchcondition type="property" property="Maxspeed">1560</matchcondition>
-		</matchconditions>
-		<changes>
-			<change operation="set" property="Maxspeed" type="Int32">1248</change>
-		</changes>
-	</ndfpatch>  -->
+  <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TMouvementHandlerLandVehicleDescriptor" name="110Spd">
+    <matchconditions>
+      <matchcondition type="property" property="Maxspeed">5720</matchcondition>
+    </matchconditions>
+    <changes>
+      <change operation="set" property="Maxspeed" type="Int32">4576</change>
+    </changes>
+  </ndfpatch>
+  <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TMouvementHandlerLandVehicleDescriptor" name="115Spd">
+    <matchconditions>
+      <matchcondition type="property" property="Maxspeed">5980</matchcondition>
+    </matchconditions>
+    <changes>
+      <change operation="set" property="Maxspeed" type="Int32">4784</change>
+    </changes>
+  </ndfpatch>
+  <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TMouvementHandlerLandVehicleDescriptor" name="120Spd">
+    <matchconditions>
+      <matchcondition type="property" property="Maxspeed">6240</matchcondition>
+    </matchconditions>
+    <changes>
+      <change operation="set" property="Maxspeed" type="Int32">4992</change>
+    </changes>
+  </ndfpatch>
 </wargamepatch>
