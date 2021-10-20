@@ -243,6 +243,18 @@
 			</change>
 			<change property="MapCountryFlag_Long" operation="append" type="map">
 				<map>
+                    <key type="TableString">SA</key>
+                    <value type="ObjectReference">
+                        <reference table="TUIResourceTexture">
+                            <matchconditions>
+                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/SA_FLAG.png</matchcondition>
+                            </matchconditions>
+                        </reference>
+                    </value>
+                </map>
+			</change>
+			<change property="MapCountryFlag_Long" operation="append" type="map">
+				<map>
                     <key type="TableString">FIN</key>
                     <value type="ObjectReference">
                         <reference table="TUIResourceTexture">
@@ -260,18 +272,6 @@
                         <reference table="TUIResourceTexture">
                             <matchconditions>
                                 <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/YUG_FLAG.png</matchcondition>
-                            </matchconditions>
-                        </reference>
-                    </value>
-                </map>
-			</change>
-			<change property="MapCountryFlag_Long" operation="append" type="map">
-				<map>
-                    <key type="TableString">SA</key>
-                    <value type="ObjectReference">
-                        <reference table="TUIResourceTexture">
-                            <matchconditions>
-                                <matchcondition type="property" property="FileName">GameData:/Assets/2D/Interface/Common/Flags/Normal/SA_FLAG.png</matchcondition>
                             </matchconditions>
                         </reference>
                     </value>
@@ -422,7 +422,7 @@
                     </value>
                 </map>
 			</change>
-      </changes>
+        </changes>
 	</ndfpatch>
 	
 	
@@ -448,6 +448,6 @@
 					</matchconditions>
             </reference>
 			</change>
-      </changes>
+        </changes>
 	</ndfpatch>
 </wargamepatch>
