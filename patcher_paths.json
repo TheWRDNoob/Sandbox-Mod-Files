@@ -51,10 +51,16 @@
         "CoalitionBonuses.xml"
       ]
     },
-    "No Units are Prototypes": {
+    "Every Deck Gets 900 Activation Points By Default": {
       "desc": "",
       "paths": [
-        "NoPrototypes.xml"
+        "DefaultActivationPoints.xml"
+      ]
+    },
+    "No Countries/Coalitions Get Activation Bonuses": {
+      "desc": "",
+      "paths": [
+        "NoDeckApBonus.xml"
       ]
     },
     "15 Slots per Category": {
@@ -81,16 +87,10 @@
         "UnitAvailability.xml"
       ]
     },
-    "Every Deck Gets 900 Activation Points By Default": {
+    "No Units are Prototypes": {
       "desc": "",
       "paths": [
-        "DefaultActivationPoints.xml"
-      ]
-    },
-    "No Activation Countries/Coalitions Get Activation Bonuses": {
-      "desc": "",
-      "paths": [
-        "NoDeckApBonus.xml"
+        "NoPrototypes.xml"
       ]
     }
   },
@@ -111,12 +111,6 @@
       "desc": "",
       "paths": [
         "SupplySpeedAirport.xml"
-      ]
-    },
-    "Naval Supply Ships Speed Buff": {
-      "desc": "",
-      "paths": [
-        "MunaLcuSpeed.xml"
       ]
     },
     "All Units Have Unlimited Fuel": {
@@ -149,14 +143,20 @@
         "PlaneAltitude.xml"
       ]
     },
+    "Naval Supply Ships Speed Buff": {
+      "desc": "",
+      "paths": [
+        "MunaLcuSpeed.xml"
+      ]
+    },
     "All Ground Vehicles are Slower": {
-      "desc": "Road speeds are significantly slower, off-road speeds are about 25% slower.",
+      "desc": "Road speeds are significantly slower, off-road speeds are 20% slower.",
       "paths": [
         "VehicleSpeeds.xml"
       ]
     },
     "All Weapons Are Less Accurate": {
-      "desc": "Weapons become around 25% less accurate.",
+      "desc": "Weapons become around 20% less accurate.",
       "paths": [
         "AccuracyReduction.xml"
       ]
