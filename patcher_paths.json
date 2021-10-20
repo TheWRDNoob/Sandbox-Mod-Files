@@ -47,7 +47,8 @@
         "AllCountryArmoriesNato.xml",
         "CoalitionCompositions(NatoOnly).xml",
         "FlagReferences.xml",
-        "FlagSize.xml"
+        "FlagSize.xml",
+        "CoalitionBonuses.xml"
       ]
     },
     "No Units are Prototypes": {
@@ -90,12 +91,6 @@
       "desc": "",
       "paths": [
         "NoDeckApBonus.xml"
-      ]
-    },
-    "EuroCorps, Scand, Eastern Blog, and Red Dragon get Avail Buffs": {
-      "desc": "",
-      "paths": [
-        "CoalitionBonuses.xml"
       ]
     }
   },
