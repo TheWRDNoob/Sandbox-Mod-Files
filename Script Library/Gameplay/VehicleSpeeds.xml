@@ -6,7 +6,7 @@
   <!-- Road speeds: wheeled=120, tracked=110, heavytracked=88 -->
   <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TMouvementHandlerLandVehicleDescriptor" name="NoRoadBonus">
     <changes>
-      <change operation="set" property="SpeedBonusOnRoad" type="Float32">0.25</change>
+      <change operation="set" property="SpeedBonusOnRoad" type="Float32">0.2</change>
     </changes>
   </ndfpatch>
   <ndfpatch ndf="pc\ndf\patchable\gfx\everything.ndfbin" table="TMouvementHandlerLandVehicleDescriptor" name="60Spd">
